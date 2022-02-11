@@ -1,0 +1,9 @@
+@import './colors';
+@import './fonts';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $lightPurple;
+    font-family: $raleway;
+}
