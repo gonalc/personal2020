@@ -9,10 +9,17 @@ a {
   text-decoration: none;
   color: unset; }
 
+img {
+  width: 100%;
+  height: auto; }
+
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #F1EDFD;
+  background-color: #f1edfd;
   font-family: "Raleway", sans-serif;
   color: #224870; }
   body header {
@@ -30,11 +37,11 @@ body {
         font-family: "Righteous", cursive;
         font-size: 80px;
         line-height: 0.8;
-        background: -webkit-linear-gradient(-60deg, #673AB7, #2196F3, #009688, #4CAF50, #CDDC39);
+        background: -webkit-linear-gradient(-60deg, #673ab7, #2196f3, #009688, #4caf50, #cddc39);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-size: 200% 420%;
+        background-size: 200% 200%;
         animation: gradient 15s ease infinite; }
         body header .hero h1 .last-name {
           letter-spacing: 0.25rem; }
@@ -66,6 +73,51 @@ body {
         animation: arrow 2s ease-in-out infinite; }
       body header .scroll p {
         margin-left: 1em; }
+  body .section {
+    min-height: 100vh; }
+    body .section .section-title {
+      text-align: center;
+      font-size: 36px; }
+    body .section .profile-picture {
+      max-width: 250px;
+      max-height: 250px;
+      width: 80vw;
+      height: 80vw;
+      border-radius: 10px;
+      background-color: white;
+      margin: auto;
+      position: relative; }
+      body .section .profile-picture.colored-shadow::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 80vw;
+        height: 80vw;
+        max-width: 250px;
+        max-height: 250px;
+        background: -webkit-linear-gradient(-60deg, #673ab7, #2196f3, #009688, #4caf50, #cddc39);
+        background-size: 200% 200%;
+        animation: gradient 15s ease infinite;
+        border-radius: 10px;
+        bottom: -5px;
+        left: 0;
+        filter: blur(10px);
+        opacity: .7; }
+      body .section .profile-picture .img-container {
+        max-width: 250px;
+        max-height: 250px;
+        width: 80vw;
+        height: 80vw;
+        border-radius: 10px;
+        overflow: hidden; }
+        body .section .profile-picture .img-container img {
+          object-fit: cover;
+          margin-top: -4em; }
+    body .section .bio {
+      box-sizing: border-box;
+      padding: 2em; }
+      body .section .bio p {
+        font-size: 18px; }
 
 @keyframes gradient {
   0% {

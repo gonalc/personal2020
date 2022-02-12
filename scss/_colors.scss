@@ -1,18 +1,28 @@
-$purple: #CFBFF7;
-$teal: #DAFFED;
-$blue: #00A1E4;
-$green: #ADFC92;
+$purple: #cfbff7;
+$teal: #daffed;
+$blue: #00a1e4;
+$green: #adfc92;
 $indigo: #224870;
-$lightPurple: #F1EDFD;
+$lightPurple: #f1edfd;
 
 // MUI Colors
-$muiPurple: #9C27B0;
-$muiDeepPurple: #673AB7;
-$muiIndigo: #3F51B5;
-$muiBlue: #2196F3;
-$muiLightBlue: #03A9F4;
-$muiCyan: #00BCD4;
+$muiPurple: #9c27b0;
+$muiDeepPurple: #673ab7;
+$muiIndigo: #3f51b5;
+$muiBlue: #2196f3;
+$muiLightBlue: #03a9f4;
+$muiCyan: #00bcd4;
 $muiTeal: #009688;
-$muiGreen: #4CAF50;
-$muiLightGreen: #BBCC33;
-$muiLime: #CDDC39;
+$muiGreen: #4caf50;
+$muiLightGreen: #bbcc33;
+$muiLime: #cddc39;
+
+$coloredGradient: -webkit-linear-gradient(
+  -60deg,
+  $muiDeepPurple,
+  $muiBlue,
+  $muiTeal,
+  $muiGreen,
+  $muiLime
+);
+$gradientAnimation: gradient 15s ease infinite;
