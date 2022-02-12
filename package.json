@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch": "nodemon -e scss -x 'npm run css'",
-    "uglify-css": "uglifycss css/style.css > css/style.min.css",
+    "uglify-css": "uglifycss css/style.css > css/style.min.css && git add .",
     "prepare": "husky install"
   },
   "repository": {
