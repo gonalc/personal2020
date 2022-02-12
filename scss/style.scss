@@ -12,6 +12,10 @@ a {
   color: unset;
 }
 
+p {
+  font-size: $textBody;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -19,6 +23,45 @@ img {
 
 html {
   scroll-behavior: smooth;
+}
+
+.colored-shadow {
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80vw;
+    height: 80vw;
+    max-width: 250px;
+    max-height: 250px;
+    background: $coloredGradient;
+    background-size: 200% 200%;
+    animation: $gradientAnimation;
+    border-radius: 10px;
+    bottom: -5px;
+    left: 0;
+    filter: blur(10px);
+    opacity: 0.7;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+  cursor: pointer;
+  .cta {
+    font-size: $textBody;
+    color: white;
+    background: -webkit-linear-gradient(-10deg, $muiPurple, $muiDeepPurple);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+      background: -webkit-linear-gradient(-40deg, $muiPurple, $muiDeepPurple);
+    }
+  }
 }
 
 body {
@@ -93,9 +136,11 @@ body {
   }
   .section {
     min-height: 100vh;
+    box-sizing: border-box;
     .section-title {
       text-align: center;
       font-size: $textLarge;
+      padding-top: 1em;
     }
     .profile-picture {
       max-width: 250px;
@@ -106,25 +151,6 @@ body {
       background-color: white;
       margin: auto;
       position: relative;
-      &.colored-shadow {
-        &::after {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          width: 80vw;
-          height: 80vw;
-          max-width: 250px;
-          max-height: 250px;
-          background: $coloredGradient;
-          background-size: 200% 200%;
-          animation: $gradientAnimation;
-          border-radius: 10px;
-          bottom: -5px;
-          left: 0;
-          filter: blur(10px);
-          opacity: .7;
-        }
-      }
       .img-container {
         max-width: 250px;
         max-height: 250px;
@@ -139,11 +165,53 @@ body {
       }
     }
     .bio {
-        box-sizing: border-box;
-        padding: 2em;
-        p {
-            font-size: $textBody;
+      box-sizing: border-box;
+      padding: 2em;
+      p {
+        font-size: $textBody;
+      }
+    }
+    &.projects {
+      .project-container {
+        display: flex;
+        flex-direction: column;
+        .mockup-container {
+          max-height: 400px;
+          height: 400px;
+          margin: auto;
+          img {
+            height: 100%;
+            width: auto;
+          }
         }
+        .project-data {
+          background-color: white;
+          border-radius: 10px;
+          box-sizing: border-box;
+          padding: 1em;
+          width: 80vw;
+          margin: 2em auto;
+          position: relative;
+          &.colored-shadow {
+            &::after {
+              min-width: 80vw;
+              height: 80vw;
+            }
+          }
+          .project-title {
+            text-align: center;
+            font-size: $textMedium;
+            margin: 0;
+          }
+          .technologies {
+            li {
+              p {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
