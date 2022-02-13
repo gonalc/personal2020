@@ -21,6 +21,12 @@ img {
   height: auto;
 }
 
+hr {
+  width: 50vw;
+  background-color: $purple;
+  margin: 2em auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,6 +48,24 @@ html {
     left: 0;
     filter: blur(10px);
     opacity: 0.7;
+  }
+  &.project-data {
+    &::after {
+      height: 85vw;
+      max-height: 85vw;
+    }
+    &.mirror-studio-shadow {
+      &::after {
+        height: 64vw;
+        max-height: 64vw;
+      }
+    }
+    &.bally-ball-shadow {
+      &::after {
+        height: 80vw;
+        max-height: 80vw;
+      }
+    }
   }
 }
 
@@ -176,12 +200,15 @@ body {
         display: flex;
         flex-direction: column;
         .mockup-container {
-          max-height: 400px;
-          height: 400px;
+          max-width: 80vw;
           margin: auto;
-          img {
-            height: 100%;
-            width: auto;
+          &.bally-ball-mockup {
+            max-height: 400px;
+            height: 400px;
+            img {
+              height: 100%;
+              width: auto;
+            }
           }
         }
         .project-data {
@@ -195,7 +222,6 @@ body {
           &.colored-shadow {
             &::after {
               min-width: 80vw;
-              height: 80vw;
             }
           }
           .project-title {

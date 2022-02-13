@@ -16,6 +16,11 @@ img {
   width: 100%;
   height: auto; }
 
+hr {
+  width: 50vw;
+  background-color: #cfbff7;
+  margin: 2em auto; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -35,6 +40,18 @@ html {
   left: 0;
   filter: blur(10px);
   opacity: 0.7; }
+
+.colored-shadow.project-data::after {
+  height: 85vw;
+  max-height: 85vw; }
+
+.colored-shadow.project-data.mirror-studio-shadow::after {
+  height: 64vw;
+  max-height: 64vw; }
+
+.colored-shadow.project-data.bally-ball-shadow::after {
+  height: 80vw;
+  max-height: 80vw; }
 
 .btn-container {
   display: flex;
@@ -144,12 +161,14 @@ body {
       display: flex;
       flex-direction: column; }
       body .section.projects .project-container .mockup-container {
-        max-height: 400px;
-        height: 400px;
+        max-width: 80vw;
         margin: auto; }
-        body .section.projects .project-container .mockup-container img {
-          height: 100%;
-          width: auto; }
+        body .section.projects .project-container .mockup-container.bally-ball-mockup {
+          max-height: 400px;
+          height: 400px; }
+          body .section.projects .project-container .mockup-container.bally-ball-mockup img {
+            height: 100%;
+            width: auto; }
       body .section.projects .project-container .project-data {
         background-color: white;
         border-radius: 10px;
@@ -159,8 +178,7 @@ body {
         margin: 2em auto;
         position: relative; }
         body .section.projects .project-container .project-data.colored-shadow::after {
-          min-width: 80vw;
-          height: 80vw; }
+          min-width: 80vw; }
         body .section.projects .project-container .project-data .project-title {
           text-align: center;
           font-size: 24px;
