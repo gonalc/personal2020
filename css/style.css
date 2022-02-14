@@ -46,12 +46,17 @@ html {
   max-height: 85vw; }
 
 .colored-shadow.project-data.mirror-studio-shadow::after {
-  height: 64vw;
-  max-height: 64vw; }
+  height: 65vw;
+  max-height: 65vw; }
 
 .colored-shadow.project-data.bally-ball-shadow::after {
   height: 80vw;
   max-height: 80vw; }
+
+.colored-shadow.card-container::after {
+  max-width: unset;
+  max-height: 70vw;
+  height: 70vw; }
 
 .btn-container {
   display: flex;
@@ -185,6 +190,44 @@ body {
           margin: 0; }
         body .section.projects .project-container .project-data .technologies li p {
           margin: 0; }
+    body .section.contact {
+      min-height: unset; }
+      body .section.contact .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body .section.contact .social-media .icon-container {
+          margin: 0 .5em; }
+          body .section.contact .social-media .icon-container i {
+            font-size: 24px; }
+  body .testimonials .card-container {
+    width: 80vw;
+    margin: 4em auto;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1em;
+    position: relative; }
+    body .testimonials .card-container .testimonial-text {
+      font-size: 24px;
+      margin: 0; }
+    body .testimonials .card-container .testimonial-author {
+      font-size: 18px;
+      text-align: right; }
+    body .testimonials .card-container .pic-container {
+      border-radius: 5px;
+      width: 50%;
+      margin: auto;
+      overflow: hidden; }
+      body .testimonials .card-container .pic-container img {
+        margin-bottom: -3px; }
+  body footer {
+    background-color: #224870;
+    box-sizing: border-box;
+    padding: 1em; }
+    body footer p {
+      color: white;
+      text-align: center; }
 
 @keyframes gradient {
   0% {
