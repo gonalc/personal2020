@@ -10,10 +10,16 @@ ul {
 a {
   text-decoration: none;
   color: unset;
+  font-family: $raleway;
 }
 
 p {
   font-size: $textBody;
+  font-family: $raleway;
+}
+
+button {
+  font-family: $raleway;
 }
 
 img {
@@ -153,7 +159,7 @@ body {
       justify-content: center;
       align-items: center;
       position: absolute;
-      bottom: 0;
+      bottom: 50px;
       left: 0;
       right: 0;
       margin: auto;
@@ -253,9 +259,9 @@ body {
         justify-content: center;
         align-items: center;
         .icon-container {
-          margin: 0 .5em;
+          margin: 0 1em;
           i {
-            font-size: $textMedium;
+            font-size: $textLarge;
           }
         }
       }

@@ -7,10 +7,15 @@ ul {
 
 a {
   text-decoration: none;
-  color: unset; }
+  color: unset;
+  font-family: "Raleway", sans-serif; }
 
 p {
-  font-size: 18px; }
+  font-size: 20px;
+  font-family: "Raleway", sans-serif; }
+
+button {
+  font-family: "Raleway", sans-serif; }
 
 img {
   width: 100%;
@@ -64,7 +69,7 @@ html {
   margin: 1em 0;
   cursor: pointer; }
   .btn-container .cta {
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     background: -webkit-linear-gradient(-10deg, #9c27b0, #673ab7);
     border: none;
@@ -123,7 +128,7 @@ body {
       justify-content: center;
       align-items: center;
       position: absolute;
-      bottom: 0;
+      bottom: 50px;
       left: 0;
       right: 0;
       margin: auto; }
@@ -161,7 +166,7 @@ body {
       box-sizing: border-box;
       padding: 2em; }
       body .section .bio p {
-        font-size: 18px; }
+        font-size: 20px; }
     body .section.projects .project-container {
       display: flex;
       flex-direction: column; }
@@ -197,9 +202,9 @@ body {
         justify-content: center;
         align-items: center; }
         body .section.contact .social-media .icon-container {
-          margin: 0 .5em; }
+          margin: 0 1em; }
           body .section.contact .social-media .icon-container i {
-            font-size: 24px; }
+            font-size: 36px; }
   body .testimonials .card-container {
     width: 80vw;
     margin: 4em auto;
@@ -212,7 +217,7 @@ body {
       font-size: 24px;
       margin: 0; }
     body .testimonials .card-container .testimonial-author {
-      font-size: 18px;
+      font-size: 20px;
       text-align: right; }
     body .testimonials .card-container .pic-container {
       border-radius: 5px;
