@@ -8,7 +8,7 @@ function transforms(x, y, el) {
   const calcX = -(y - box.y - box.height / 2) / CONSTRAINT;
   const calcY = (x - box.x - box.width / 2) / CONSTRAINT;
 
-  return `perspective(1000px) rotateX(${calcX}deg) rotateY(${calcY}deg)`;
+  return `perspective(2000px) rotateX(${calcX}deg) rotateY(${calcY}deg)`;
 }
 
 function transformElement(el, xyEl) {
