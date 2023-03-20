@@ -66,6 +66,7 @@ html {
 .btn-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 1em 0;
   cursor: pointer;
   .cta {
@@ -78,6 +79,9 @@ html {
     transition: box-shadow 0.3s ease-in-out;
     &:hover {
       box-shadow: 0 5px 10px rgba($indigo, .3);
+    }
+    i {
+      margin-right: 0.5em;
     }
   }
 }
@@ -256,9 +260,20 @@ body {
             margin: 0;
           }
           .technologies {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             li {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              i {
+                font-size: $technologyIconSize;
+                color: $muiDeepPurple;
+              }
               p {
-                margin: 0;
+                margin: 0.5em;
+                font-size: $textSmall;
               }
             }
           }
