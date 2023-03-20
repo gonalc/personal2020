@@ -267,6 +267,8 @@ body {
               display: flex;
               flex-direction: column;
               align-items: center;
+              max-width: 70px;
+              margin: 0 10px;
               i {
                 font-size: $technologyIconSize;
                 color: $muiDeepPurple;
@@ -274,6 +276,7 @@ body {
               p {
                 margin: 0.5em;
                 font-size: $textSmall;
+                text-align: center;
               }
             }
           }
