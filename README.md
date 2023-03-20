@@ -2,7 +2,7 @@
 
 > Made with HTML, SCSS and JavaScript.
 
-## Commands
+## Quick start
 
 * Run `npm run watch` for transpiling the SCSS into CSS code.
 
